@@ -1,0 +1,43 @@
+ul.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  flex: 0 0 360px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  border-radius: 4px;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.sl-overlay {
+  background: rgba(46, 47, 66, 0.8) !important;
+}
+
+.sl-close,
+.sl-prev,
+.sl-next,
+.sl-counter {
+  fill: #fff !important; /* for SVG icons */
+  color: #fff !important; /* for text like counter */
+}
+
+.gallery-image:hover {
+  transform: scale(1.04444, 1.04);
+}
